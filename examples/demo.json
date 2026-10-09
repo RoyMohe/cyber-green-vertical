@@ -1,0 +1,271 @@
+{
+  "brand": "科技差不多",
+  "topic": "EP.01 · 天气预报",
+  "cps": 4.8,
+  "scenes": [
+    {
+      "kind": "hero",
+      "title": "天气预报",
+      "en": "WEATHER FORECAST",
+      "left": {
+        "title": "观测",
+        "en": "OBSERVATION"
+      },
+      "right": {
+        "title": "预测",
+        "en": "PREDICTION"
+      },
+      "lines": [
+        "明明说好今天晴天",
+        "为什么出门就被[淋成狗]？"
+      ],
+      "viz": "globe"
+    },
+    {
+      "kind": "bubbles",
+      "items": [
+        {
+          "big": "混沌",
+          "bubble": "什么是混沌",
+          "viz": "lorenz",
+          "en": "CHAOS"
+        },
+        {
+          "big": "湍流",
+          "bubble": "什么是湍流",
+          "viz": "flow",
+          "en": "TURBULENCE"
+        }
+      ],
+      "lines": [
+        "答案藏在两个词里",
+        "混沌，和湍流"
+      ]
+    },
+    {
+      "kind": "quote",
+      "name": "Edward Lorenz",
+      "role": "气象学家 · 1972 年演讲题目",
+      "text": "巴西一只蝴蝶扇动翅膀，会不会在得州引发一场龙卷风？",
+      "lines": [
+        "1972 年，气象学家洛伦兹",
+        "抛出了著名的[蝴蝶效应]"
+      ]
+    },
+    {
+      "kind": "flow",
+      "steps": [
+        {
+          "title": "全球观测",
+          "sub": "卫星 / 雷达"
+        },
+        {
+          "title": "数值模型",
+          "sub": "超算求解"
+        },
+        {
+          "title": "输出预报",
+          "sub": "温度 / 降水"
+        }
+      ],
+      "note": "初值差一点，结果差很多",
+      "lines": [
+        "现代预报靠超级计算机",
+        "把观测数据塞进[物理方程]",
+        "一步步往后推算"
+      ]
+    },
+    {
+      "kind": "layers",
+      "focus": 0,
+      "items": [
+        {
+          "title": "对流层",
+          "en": "TROPOSPHERE · 0–12KM"
+        },
+        {
+          "title": "平流层",
+          "en": "STRATOSPHERE · 12–50KM"
+        },
+        {
+          "title": "中间层",
+          "en": "MESOSPHERE · 50–85KM"
+        }
+      ],
+      "lines": [
+        "而且天气现象几乎都挤在",
+        "大气最底下这层[对流层]里"
+      ]
+    },
+    {
+      "kind": "card",
+      "title": "预报准确率（示意）",
+      "chart": {
+        "values": [
+          96,
+          93,
+          89,
+          85,
+          79,
+          72,
+          65,
+          59,
+          54,
+          50
+        ],
+        "labels": [
+          "1天",
+          "",
+          "3天",
+          "",
+          "5天",
+          "",
+          "7天",
+          "",
+          "9天",
+          ""
+        ],
+        "min": 40,
+        "max": 100,
+        "mean": 75,
+        "highlight": [
+          5,
+          9
+        ],
+        "hlabel": "6–10天"
+      },
+      "badge": "越往后越不准",
+      "lines": [
+        "所以预报天数越长",
+        "准确率就[掉得越快]"
+      ]
+    },
+    {
+      "kind": "number",
+      "value": "14天",
+      "caption": "被普遍认为的[天气可预报上限]",
+      "pipeline": [
+        {
+          "t": "输入初始状态",
+          "en": "INITIAL STATE"
+        },
+        {
+          "t": "误差指数级放大",
+          "en": "ERROR GROWTH"
+        },
+        {
+          "t": "预报失效",
+          "en": "LIMIT"
+        }
+      ],
+      "lines": [
+        "哪怕观测再精确",
+        "两周左右也基本到头了"
+      ]
+    },
+    {
+      "kind": "vs",
+      "top": {
+        "title": "全局模型",
+        "en": "GLOBAL MODEL",
+        "icon": "globe",
+        "label": "看得广"
+      },
+      "bottom": {
+        "title": "本地对流",
+        "en": "LOCAL CONVECTION",
+        "icon": "radar",
+        "label": "变得快"
+      },
+      "center": "尺度对不上",
+      "lines": [
+        "更麻烦的是夏天的雷阵雨",
+        "范围小、变化快",
+        "[网格]根本抓不住"
+      ]
+    },
+    {
+      "kind": "tags",
+      "center": {
+        "title": "AI 气象大模型",
+        "en": "AI WEATHER MODEL",
+        "icon": "chip"
+      },
+      "tags": [
+        {
+          "t": "历史再分析",
+          "en": "ERA5 REANALYSIS"
+        },
+        {
+          "t": "卫星云图",
+          "en": "SATELLITE"
+        },
+        {
+          "t": "秒级推理",
+          "en": "INFERENCE"
+        },
+        {
+          "t": "雷达回波",
+          "en": "RADAR ECHO"
+        },
+        {
+          "t": "集合预报",
+          "en": "ENSEMBLE"
+        },
+        {
+          "t": "风场数据",
+          "en": "WIND FIELD"
+        }
+      ],
+      "top_word": "数据",
+      "bottom_word": "算力",
+      "lines": [
+        "这几年 AI 大模型入场",
+        "用海量历史数据学规律"
+      ]
+    },
+    {
+      "kind": "compare2",
+      "left": {
+        "title": "传统数值预报",
+        "big": "解方程",
+        "en": "PHYSICS-BASED",
+        "viz": "matrix"
+      },
+      "right": {
+        "title": "AI 预报",
+        "big": "学规律",
+        "en": "DATA-DRIVEN",
+        "viz": "flow"
+      },
+      "lines": [
+        "一个硬算物理",
+        "一个[学习经验]"
+      ]
+    },
+    {
+      "kind": "list",
+      "title": "看预报的正确姿势",
+      "items": [
+        "只信 [3 天内] 的细节",
+        "看降水[概率]，别看图标",
+        "临近出门刷一下雷达图"
+      ],
+      "lines": [
+        "所以普通人看预报",
+        "记住这三条就够了"
+      ]
+    },
+    {
+      "kind": "banner",
+      "text": "不是预报不努力是天气太混沌",
+      "per": 7,
+      "icon": "!",
+      "en": "CHAOS IS THE LIMIT",
+      "lines": [
+        "不是预报员不努力",
+        "是大气本身[太混沌]"
+      ]
+    }
+  ]
+}

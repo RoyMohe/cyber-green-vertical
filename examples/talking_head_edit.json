@@ -1,0 +1,224 @@
+{
+  "brand": "科技差不多",
+  "topic": "AI 月供时代",
+  "cam": {
+    "src": "talk.mp4",
+    "face": {
+      "x": 490,
+      "y": 990,
+      "box": {
+        "x": 260,
+        "y": 680,
+        "w": 460,
+        "h": 620
+      }
+    }
+  },
+  "scenes": [
+    {
+      "kind": "overlay",
+      "cam": "full",
+      "title": "AI 革命",
+      "en": "THE AI REVOLUTION",
+      "warn": "检测到离谱 BUG",
+      "wd": 1.75,
+      "lock": false,
+      "lines": [
+        "这轮AI革命可能卡进了",
+        "一个非常离谱的[bug]"
+      ]
+    },
+    {
+      "kind": "vs",
+      "cam": "circle",
+      "scale": 0.86,
+      "ctop": 470,
+      "cheight": 980,
+      "head": "离谱的 BUG",
+      "head_en": "SYSTEM CONFLICT",
+      "top": {
+        "title": "教会机器思考",
+        "en": "MACHINES THAT THINK",
+        "icon": "chip",
+        "label": "能力狂飙"
+      },
+      "bottom": {
+        "title": "付不起月供",
+        "en": "CAN'T PAY THE BILL",
+        "icon": "card",
+        "label": "钱包告急",
+        "d": 2.1
+      },
+      "center": "BUG",
+      "center_d": 1.6,
+      "lines": [
+        "我们快把机器教会思考了",
+        "却可能先付不起[AI的月供]了"
+      ]
+    },
+    {
+      "kind": "bill",
+      "cam": "circle",
+      "head": "AI 订阅账单",
+      "head_en": "MONTHLY · BASIC PLANS",
+      "title": "月度订阅",
+      "en": "INVOICE #2026",
+      "items": [
+        {
+          "name": "ChatGPT Plus",
+          "en": "OPENAI",
+          "price": "$20",
+          "mark": "G",
+          "d": 0.2
+        },
+        {
+          "name": "Claude Pro",
+          "en": "ANTHROPIC",
+          "price": "$20",
+          "mark": "C",
+          "d": 0.8
+        },
+        {
+          "name": "Google AI Pro",
+          "en": "GEMINI",
+          "price": "$19.99",
+          "mark": "◆",
+          "d": 1.2
+        }
+      ],
+      "total": {
+        "label": "全订 / 每月",
+        "value": "$59.99",
+        "d": 3.65
+      },
+      "stamp": "API 另算",
+      "stamp_d": 5.75,
+      "lines": [
+        "我把ChatGPT、Claude、Gemini",
+        "三家基础订阅算了一下",
+        "全订每月约[60美元]",
+        "API另算"
+      ]
+    },
+    {
+      "kind": "tiers",
+      "cam": "rect",
+      "head": "ChatGPT 个人档位",
+      "head_en": "PRICING TIERS",
+      "items": [
+        {
+          "label": "Plus",
+          "en": "BASIC",
+          "value": 20,
+          "text": "$20",
+          "d": 0.15
+        },
+        {
+          "label": "Pro",
+          "en": "5× PLUS",
+          "value": 100,
+          "text": "$100",
+          "d": 2.6
+        },
+        {
+          "label": "Pro",
+          "en": "TOP TIER",
+          "value": 200,
+          "text": "$200",
+          "d": 3.3,
+          "hot": true
+        }
+      ],
+      "badge": "×10",
+      "badge_d": 3.9,
+      "lines": [
+        "ChatGPT Plus还是20美元",
+        "但网上已经有100美元",
+        "和200美元两档的[Pro]"
+      ],
+      "ctop": 600,
+      "cheight": 860
+    },
+    {
+      "kind": "overlay",
+      "cam": "full",
+      "title": "硬件也在涨",
+      "en": "HARDWARE PRICES ↑",
+      "td": 0,
+      "lock": false,
+      "ld": 0.15,
+      "lines": [
+        "硬件也在涨啊"
+      ]
+    },
+    {
+      "kind": "delta",
+      "cam": "circle",
+      "head": "硬件涨价 · 01",
+      "head_en": "MAC MINI",
+      "product": {
+        "name": "Mac mini",
+        "en": "APPLE · DESKTOP",
+        "icon": "mini",
+        "image": "images/macmini.png",
+        "ih": 290
+      },
+      "from": {
+        "label": "M4 · 2024",
+        "price": "¥4499",
+        "d": 3.0
+      },
+      "to": {
+        "label": "M6 · 2026",
+        "price": "¥6999",
+        "d": 1.35
+      },
+      "diff": {
+        "text": "+¥2500",
+        "d": 4.4,
+        "caption": "国行起售价 · 贵了 [2500 块]",
+        "fs": 130
+      },
+      "lines": [
+        "M6 Mac mini卖了[6999元]",
+        "比上一代M4",
+        "贵了整整[2500块钱]"
+      ]
+    },
+    {
+      "kind": "delta",
+      "cam": "rect",
+      "head": "硬件涨价 · 02",
+      "head_en": "IPHONE · US STARTING PRICE",
+      "product": {
+        "name": "iPhone 17 Pro",
+        "en": "APPLE · US PRICE",
+        "icon": "phone",
+        "image": "images/iphone17pro.jpg",
+        "ih": 420,
+        "blend": "fade",
+        "fade": true
+      },
+      "from": {
+        "label": "16 Pro · 128GB",
+        "price": "$999",
+        "d": 1.6
+      },
+      "to": {
+        "label": "17 Pro · 256GB",
+        "price": "$1099",
+        "d": 3.1
+      },
+      "diff": {
+        "text": "+$100",
+        "d": 3.5,
+        "caption": "起售价涨了 · 起步容量也翻倍",
+        "fs": 130
+      },
+      "lines": [
+        "美国iPhone 17 Pro",
+        "也从999美元涨到了[1099美元]"
+      ]
+    }
+  ]
+}
